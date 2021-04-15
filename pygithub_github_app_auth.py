@@ -18,11 +18,11 @@ g = Github(base_url=config.GITHUB_BASE_URL, login_or_token=get_app_token())
 
 while True:
     try:
-        git_repo = g.get_repo('ASP/ASP')
+        git_repo = g.get_repo('chrislee18a/pygithub_githubapp')
     except BadCredentialsException:
         print("BadCredentialsException!")
         g = Github(base_url=config.GITHUB_BASE_URL, login_or_token=get_app_token())
-        git_repo = g.get_repo('ASP/ASP')
+        git_repo = g.get_repo('chrislee18a/pygithub_githubapp')
         
     print(list(git_repo.get_branches()))
     time.sleep(3 * 60) # 3 mins
