@@ -10,7 +10,7 @@ APP_ID = 123456
 INSTALLATION_ID = 123456
 
 # the custom URL when using for GHE
-GITHUB_BASE_URL = "https://github.com/api/v3"
+GITHUB_BASE_URL = "https://api.github.com"
 
 #the pem file from the github apps
 GITHUB_PRIVATE_KEY = "private-key.pem"
